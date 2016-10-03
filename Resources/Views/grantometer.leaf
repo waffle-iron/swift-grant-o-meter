@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>GRANT-O-METER</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="/styles/normalize.css">
+  <link rel="stylesheet" href="/styles/skeleton.css">
+  <link rel="stylesheet" href="/styles/grumpy.css">
+
+</head>
+<body>
+
+    <!-- Primary Page Layout
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="red-center-gradient">
+        <div class="container">
+            <div class="row">
+                <div class="six columns" id="gm-column">
+                     <table id="gm-the-meter">
+                         <tr id="gm-scale-top">
+                            <td id="gm-minus"><a href="javascript:;" onClick="decreaseGrantigkeit();" class="gm-button-minus"></a></td>
+                            <td>
+                                <canvas id="GrantOMeterCanvas" width="100" height="500"></canvas>
+                                <script>
+                                    var canvas = document.getElementById('GrantOMeterCanvas');
+                                    var context = canvas.getContext("2d");
+                                    const GAUGE_SIZE = canvas.height;
+                                    const API_SCALE = 110;
+                                    const OFFSET = 5;
+                                    const width = 90;
+                                    
+                                    function drawGrantOMeter(grumpy) {
+                                        
+                                        var max_size = GAUGE_SIZE - 50;
+                                        var size = Math.round(max_size / API_SCALE * grumpy);
+                                        var bottom_position = size - OFFSET;
+                                        var top_position = GAUGE_SIZE - size ;
+                                        console.log(grumpy);
+                                        console.log(top_position);
+                                        console.log(bottom_position);
+                                        context.clearRect(0, 0, canvas.width, canvas.height);
+                                        if (grumpy >= 1 && grumpy <= 110 ) {
+                                            context.beginPath();
+                                            
+                                            context.rect(5, top_position, width, bottom_position);
+                                            context.arc(50, top_position, width / 2, 0, Math.PI, true);
+                                            
+                                            context.globalCompositeOperation = "destination-over";
+                                                
+                                            context.fillStyle = "#()410000";
+                                            context.fill();
+                                            context.strokeStyle = "white";
+                                            context.lineWidth = 10;
+                                            context.stroke();
+                                            
+                                        }
+                                    }
+                                </script>
+                                <script src="/scripts/grantometer.js">
+                                </script>
+                            </td>
+                            <td id="gm-plus"><a href="javascript:;" onClick="increasGrantigkeit();" class="gm-button-plus"></a></td>
+                        </tr>
+                </table>
+                </div>
+                <div class="six columns">
+                    #import("forms")
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="white">
+        <div class="container">
+            #import("body")
+        </div>
+    </div>
+    <div class="purple white-text">
+        <div class="container">
+            <!-- columns should be the immediate child of a .row -->
+            <div class="row">
+                <div class="three columns">
+                    <em>Get started</em><br />
+
+                </div>
+                <div class="three columns">
+                    <em>Boring stuff</em><br />
+
+                </div>
+                <div class="six columns"><em>About</em><br />
+                    <a href="https://github.com/oguntli/grant-o-meter">Github</a><br />
+                    <a href="https://github.com/oguntli/grant-o-meter/issues/new">Report an issue</a></ br>
+                </div>
+            </div>   
+        </div>
+    </div>
+    <div class="purple-dark white-text">
+        <div class="container">
+            The GRANT-O-METER &copy; 2016 Team R.E.D.
+        </div>
+    </div>
+
+    <!-- End Document
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

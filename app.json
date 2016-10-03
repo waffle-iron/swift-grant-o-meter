@@ -1,0 +1,12 @@
+{
+    "name": "GRANT-O-METER 2.0",
+    "scripts": {},
+    "env": {},
+    "formation": {},
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "https://github.com/vapor/heroku-buildpack"
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>GRANT-O-METER</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="skeleton.css">
+  <link rel="stylesheet" href="grumpy.css">
+
+</head>
+<body>
+
+    <!-- Primary Page Layout
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="red-center-gradient">
+        <div class="container">
+            <div class="row" id="gm-logo-line">
+            
+            </div>
+        </div>
+    </div>
+    <div class="white">
+        <div class="container">
+            <div class="offset-by-three six columns">
+                <h3>Sign up!</h3>
+                <form name="signup" action="/signup" method="post">
+                    <h4>Username and password</h4>
+                    <input type="text" placeholder="chose a username">
+                    <input type="email" placeholder="your email address">
+                    <input type="password" placeholder="password">
+                    <input type="password" placeholder="verify password"><br />
+                    <input type="submit" value="I want to be on grant-o-meter">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="purple white-text">
+        <div class="container">
+            <!-- columns should be the immediate child of a .row -->
+            <div class="row">
+                <div class="three columns">
+                    <em>Get started</em><br />
+                    <a href="/signup">Sign up!</a><br />
+                    <a href="/tutorial">Tutorial</a><br />
+                </div>
+                <div class="three columns">
+                    <em>Boring stuff</em><br />
+                    <a href="/tos" >Terms of use</a><br />
+                    <a href="/privacy">Privacy policy</a><br />
+                    <a href="/contact">Contact us</a>
+                </div>
+                <div class="six columns"><em>About</em><br />
+                    <a href="https://github.com/oguntli/grant-o-meter">Github</a><br />
+                    <a href="https://github.com/oguntli/grant-o-meter/issues/new">Report an issue</a></ br>
+                </div>
+            </div>   
+        </div>
+    </div>
+    <div class="purple-dark white-text">
+        <div class="container">
+            The GRANT-O-METER &copy; 2016 Team R.E.D.
+        </div>
+    </div>
+
+    <!-- End Document
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
