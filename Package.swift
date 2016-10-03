@@ -1,7 +1,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "grantometer-2.0",
+    name: "swift-grant-o-meter",
     dependencies: [
         .Package(url: "https://github.com/vapor/vapor.git", majorVersion: 1, minor: 0),
     ],
