@@ -1,8 +1,12 @@
 html, body { 
             height: 100%;
             background-color:#11000A;
-            margin: 0;
+            font-family: 'Open Sans', 'Helvetica Neue', 'Arial', sans-serif;
            }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bangers', cursive;
+}
 
 tr, td {
         padding:0px;
@@ -212,20 +216,20 @@ tr, td {
              }
 
 #gm-logo-line {
-                background: url('/images/grantometer-v.svg') no-repeat top center;
+                background: url('grantometer-v.svg') no-repeat top center;
                 height: 70px;
                 display: block;
             }
 
 #gm-column  {
                 text-align:right;
-                background: url('/images/grantometer-m.svg') no-repeat top left;
+                background: url('grantometer-m.svg') no-repeat top left;
             }
 
 @media (min-width: 1000px ) {
 #gm-column  {
                 text-align:right;
-                background: url('/images/grantometer.svg') no-repeat top right;
+                background: url('grantometer.svg') no-repeat top right;
             }
 }
 
@@ -245,20 +249,20 @@ tr, td {
           }
           
 .gm-button-minus {              
-            background: url('/images/minus.svg') left top no-repeat;
+            background:url('minus.svg') left top no-repeat;
             width:110px;
             height:110px;
             display:block;
           }
 .gm-button-minus:hover {
-            background: url('/images/minus.svg') right top;
+            background:url('minus.svg') right top;
            }
 .gm-button-plus {              
-            background: url('/images/plus.svg') left top no-repeat;
+            background:url('plus.svg') left top no-repeat;
             width:110px;
             height:110px;
             display:block;
           }
 .gm-button-plus:hover {
-            background: url('/images/plus.svg') right top;
+            background:url('plus.svg') right top;
            }
