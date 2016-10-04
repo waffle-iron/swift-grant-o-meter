@@ -2,7 +2,6 @@
 
 #export("forms") {
 
-
 <h1>#(message)</h1>
 
 }

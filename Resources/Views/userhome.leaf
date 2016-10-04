@@ -7,7 +7,6 @@
                                 <input name="why" type="text" placeholder="why are you grumpy?">
                                 <input name="blame" type="text" placeholder="who is to blame">
                                 <input name="while" type="text" placeholder="while doing?">
-
                             </form>
                             <br/><h4>Wow look at those numbers!</h4>
                             <p>You have 10000000000 records!<br />
