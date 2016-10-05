@@ -19,7 +19,7 @@ let apiVersion: String = "v2"
 
 // The route for get request to the landing page
 drop.get { req in
-    let lang = req.headers["Accept-Language"]?.string ?? "en"
+    let lang = req.headers["Accept-Language"]?.string ?? "default"
     return try drop.view.make("grumpy-welcome", [
         "message": Node.string(drop.localization[lang, "welcome", "title"])
     ])
