@@ -22,7 +22,7 @@ drop.get { req in
     let lang = req.headers["Accept-Language"]?.string ?? "default"
     return try drop.view.make("grumpy-welcome", [
         "message": Node.string(drop.localization[lang, "welcome", "title"])
-    ])
+        ])
 }
 
 
@@ -40,7 +40,7 @@ drop.group("u") { userPage in
         let lang = req.headers["Accept-Language"]?.string ?? "en"
         return try drop.view.make("userhome", [
             "message": Node.string(drop.localization[lang, "", ""])
-        ])
+            ])
     }
 }
 
