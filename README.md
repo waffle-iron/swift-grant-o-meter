@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/oguntli/swift-grant-o-meter.png?label=ready&title=Ready)](https://waffle.io/oguntli/swift-grant-o-meter)
 # Swift Grant-O-Meter 😠
 [![Build Status](https://travis-ci.org/oguntli/swift-grant-o-meter.svg?branch=master)](https://travis-ci.org/oguntli/swift-grant-o-meter)
 
