@@ -1,4 +1,5 @@
 import XCTest
+import Vapor
 @testable import GrantOMeter
 
 class GrantOMeterTests: XCTestCase {
@@ -7,6 +8,11 @@ class GrantOMeterTests: XCTestCase {
     ]
 
     func testHash() {
-        XCTAssertEqual(1, 2)
+        let drop = Droplet()
+        
+        XCTAssertEqual(10,  measureGrumpy(hoshi: 5))
+        print("hallo")
     }
+    
+    
 }

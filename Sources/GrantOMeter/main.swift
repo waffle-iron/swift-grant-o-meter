@@ -38,6 +38,7 @@ drop.group("u") { userPage in
     
     userPage.get(String.self) { req, userName in
         let lang = req.headers["Accept-Language"]?.string ?? "en"
+        print(measureGrumpy(hoshi: 20))
         return try drop.view.make("userhome", [
             "message": Node.string(drop.localization[lang, "", ""])
             ])
